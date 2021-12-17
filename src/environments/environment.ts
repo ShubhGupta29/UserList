@@ -2,8 +2,17 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const HOSTNAME: string = "reqres.in";
+const PORT_NUMBER: number=0;
+const API: string = "/api/";
+
 export const environment = {
-  production: false
+  production: false,
+  getListUsers: "https://" + HOSTNAME + API + "users?page=",
+  getSingleUser: "https://" + HOSTNAME + API + "users/",
+  postLogin: "https://" + HOSTNAME + API + "login",
+  postRegister: "https://" + HOSTNAME + API + "register",
+
 };
 
 /*

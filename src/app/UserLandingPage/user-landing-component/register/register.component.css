@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;/*font changed*/
+    background: #3B3B98;/* Changed background color*/
+}
+
+.box{
+    width: 300px; /*made the input elements in box*/
+    padding: 40px;/* around box 40px gap maintained*/
+    position: absolute;
+    top: 50%; /* moved 50% down  same with left*/
+    left: 50%;
+    transform: translate(-50%,-50%);/* made it come into center*/
+    background: #191919;/*background of form changed*/
+    text-align: center;/*sb beech mei*/
+    
+}
+
+/*login heading*/
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;/*boldness reduced*/   
+}
+
+.box input[type= "text"], .box input[type="password"]{
+    border: 0;
+    background: none;/* removes background */
+    display: block;/* makes input and passwword looks good*/
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;/*border color changes*/
+    padding: 14px 10px;/* boxes elongated*/
+    width: 200px;/*size of the boxes increased*/
+    outline: none;/*colour of box does not changes from blue to white it remains as it is*/
+    color: white;
+    border-radius: 24px;/*gave curves to border*/
+    transition: 0.25s;/*shows transition effects*/
+}
+/*when we focus on the boxes*/
+.box input[type= "text"]:focus, .box input[type="password"]:focus{
+    width: 280px;/*when clicked it enlongated*/
+    border-color: #2ecc71;/*border color changes*/
+}
+
+/*login button taken as input tag*/
+/*making it same as type text and password by copying the whole content*/
+/*width removed and padding changed, color made different*/
+.box input[type ="submit"]{
+    border: 0;
+    background: none;/* removes background */
+    display: block;/* makes input and passwword looks good*/
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;/*border color changes*/
+    padding: 14px 40px;/* boxes elongated*/
+    width: 200px;/*size of the boxes increased*/
+    outline: none;/*colour of box does not changes from blue to white it remains as it is*/
+    color: white;
+    border-radius: 24px;/*gave curves to border*/
+    transition: 0.25s;/*shows transition effects*/
+}
+
+.box input[type ="submit"]:hover{
+background: #2ecc71;/*when hovered it changes it color in background*/
+}

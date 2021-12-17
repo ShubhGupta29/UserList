@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark nav-fill w-100">
+    <a class="navbar-brand" routerLink="../" routerLinkActive="active"> Webapp</a>
+</nav>
+
+<mat-chip-list style="padding-top: 46px;">
+    <mat-chip>
+        <div class="col-6" style="position: relative;display: inline;padding: 24px;">
+            <a routerLink="../home/listview" style="position: relative;display: inline;">List View</a>
+        </div>
+    </mat-chip>
+    <mat-chip>
+        <div class="col-6" style="position: relative;display: inline;padding: 24px;">
+            <a routerLink="../home/singleview" style="position: relative;display: inline;">Single View</a>
+        </div>
+    </mat-chip>
+</mat-chip-list>
+
+
+<router-outlet></router-outlet>
