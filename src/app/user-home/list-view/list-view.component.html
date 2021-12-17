@@ -1,9 +1,3 @@
-    <!-- <form class="box">
-        <h1>For List view enter a number</h1>
-        <input type="number" placeholder="Enter a number" min="0" name="num" [(ngModel)]="num">
-        <input type="submit" value="Submit" name="" (click)="value()">
-    </form> -->
-
     <div *ngIf="cardShow"  style="padding: 16px 0 0 0;">
     <mat-card class="example-card">
 
@@ -22,10 +16,6 @@
 
 
     <div *ngIf="list!=null && !cardShow">
-        <!-- page:{{list.page}};
-        per_page:{{list.per_page}};
-        total:{{list.total}};
-        total_pages:{{list.total_pages}}; -->
         <div class="row">
             <ul style="list-style-type:none;">
                 <li class="col-4" *ngFor="let i of list.data" style="padding: 26px;">
@@ -45,10 +35,3 @@
             </ul>
         </div>
     </div>
-
-    <!-- <div *ngIf="!listdata && list!=null">
-        <mat-card class="example-card">
-
-            <mat-card-title>No data available</mat-card-title>
-        </mat-card>
-    </div> -->

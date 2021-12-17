@@ -1,19 +1,19 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;/*font changed*/
-    background: #3B3B98;/* Changed background color*/
+    font-family: sans-serif;
+    background: #3B3B98;
 }
 
 .box{
-    width: 300px; /*made the input elements in box*/
-    padding: 40px;/* around box 40px gap maintained*/
+    width: 300px; 
+    padding: 40px;
     position: absolute;
-    top: 50%; /* moved 50% down  same with left*/
+    top: 50%; 
     left: 50%;
-    transform: translate(-50%,-50%);/* made it come into center*/
-    background: #191919;/*background of form changed*/
-    text-align: center;/*sb beech mei*/
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
     
 }
 
@@ -21,47 +21,45 @@ body{
 .box h1{
     color: white;
     text-transform: uppercase;
-    font-weight: 500;/*boldness reduced*/   
+    font-weight: 500;
 }
 
 .box input[type= "text"], .box input[type="password"]{
     border: 0;
-    background: none;/* removes background */
-    display: block;/* makes input and passwword looks good*/
+    background: none;
+    display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #3498db;/*border color changes*/
-    padding: 14px 10px;/* boxes elongated*/
-    width: 200px;/*size of the boxes increased*/
-    outline: none;/*colour of box does not changes from blue to white it remains as it is*/
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
     color: white;
-    border-radius: 24px;/*gave curves to border*/
-    transition: 0.25s;/*shows transition effects*/
-}
-/*when we focus on the boxes*/
-.box input[type= "text"]:focus, .box input[type="password"]:focus{
-    width: 280px;/*when clicked it enlongated*/
-    border-color: #2ecc71;/*border color changes*/
+    border-radius: 24px;
+    transition: 0.25s;
 }
 
-/*login button taken as input tag*/
-/*making it same as type text and password by copying the whole content*/
-/*width removed and padding changed, color made different*/
+.box input[type= "text"]:focus, .box input[type="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+
 .box input[type ="submit"]{
     border: 0;
-    background: none;/* removes background */
-    display: block;/* makes input and passwword looks good*/
+    background: none;
+    display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #2ecc71;/*border color changes*/
-    padding: 14px 40px;/* boxes elongated*/
-    width: 200px;/*size of the boxes increased*/
-    outline: none;/*colour of box does not changes from blue to white it remains as it is*/
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
     color: white;
-    border-radius: 24px;/*gave curves to border*/
-    transition: 0.25s;/*shows transition effects*/
+    border-radius: 24px;
+    transition: 0.25s;
 }
 
 .box input[type ="submit"]:hover{
-background: #2ecc71;/*when hovered it changes it color in background*/
+background: #2ecc71;
 }

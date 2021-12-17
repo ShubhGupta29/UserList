@@ -7,7 +7,7 @@ const PORT_NUMBER: number=0;
 const API: string = "/api/";
 
 export const environment = {
-  production: false,
+  production: true,
   getListUsers: "https://" + HOSTNAME + API + "users?page=",
   getSingleUser: "https://" + HOSTNAME + API + "users/",
   postLogin: "https://" + HOSTNAME + API + "login",
